@@ -1,7 +1,6 @@
 with
-order as (
-
-    select * from {{ ref('raw_orders') }}
+orders as (
+select * from {{ ref('raw_orders') }}
 )
 
 select 
